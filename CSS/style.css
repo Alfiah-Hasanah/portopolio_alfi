@@ -1,0 +1,96 @@
+*{
+	font-family: 'Nunito', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: black;
+}
+
+/*pengaturan header*/
+	header {
+		height: 70px;
+		width: 100%;
+		border: 1px solid;
+	}
+
+	header ul {
+		float: right;
+	}
+	header ul li {
+		display: inline-block;
+		padding: 25px;
+	}
+	header ul li a:hover{
+		color: #43bff0;
+	}
+	header ul li a{
+		transition: .3s;
+	}
+	header h1{
+		float: left;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+	header h1 a:hover{
+		color: #43bff0;
+	}
+	header h1{
+		transition: .3s;
+	}
+	a{
+		text-decoration: none;
+	}
+	.container{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.container::after{
+	    content: '';
+	    display: none;
+	    padding: 15px;
+	}
+	.menu-sidebar{
+		float: right;
+		display: none;
+		padding: 15px;
+	}
+	.menu-sidebar:hover{
+		cursor: pointer;
+	}
+	@media(max-width: 768px){
+		.menu-sidebar{
+			display: block;
+	}
+	header ul{
+		display: none;
+	}
+	.col-4{
+		width: 50%;
+	}
+	.col-3{
+		width: 100%;
+	}
+}
+	#bar{
+		display: none;
+	}
+	.sidebar{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -150px;
+		width: 150px;
+		background-color: rgba(50, 158, 168, .7);
+		z-index: 9999;
+	}
+	.sidebar ul li{
+		padding: 25px;
+	}
+	.sidebar ul li a{
+		color: white;
+	}
+	.sidebar ul li:hover{
+		background-color: #7b32a8;
+	}
+	#bar:checked ~ .sidebar{
+		left: 0;
+	}
